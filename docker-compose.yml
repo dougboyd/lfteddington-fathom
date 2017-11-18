@@ -1,0 +1,34 @@
+version: '2'
+services:
+  backend:
+    environment:
+     - DB_HOST=db
+     - PROTOCOL=http
+    build:
+      context: ./backend
+      dockerfile: Dockerfile-dev
+    links:
+      - dbpostgres
+    ports:
+     - "3001:3001"
+     - "56745:56745"
+    depends_on:
+     - "dbpostgres"
+    volumes:
+     - ./backend:/opt/rms-inventory/backend
+     - /opt/rms-inventory/backend/node_modules
+     - ./docker/volumes/backend/sequelize.json:/opt/rms-inventory/backend/src/config/sequelize.json
+  dbpostgres:
+    image: mdillon/postgis:9.6
+    volumes:
+      - ./docker/volumes/postgresql:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: rms-inventory
+      POSTGRES_PASSWORD: rms-inventory
+      DB_NAME: rms-inventory
+      DB_USER: rms-inventory
+      DB_USER: rms-inventory
+      DB_PASSWORD: rms-inventory
+      POSTGRES_DB: rms-inventory
