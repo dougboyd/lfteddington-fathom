@@ -1,0 +1,24 @@
+Nov 18 - 17:00 - 20:00 - Docker compose for dev database. Loading of dev database from crap backup.
+Nov 19 - 06:00 - 10:00 - Docker Ubuntu instance. New project. Start Sequelize models.
+
+TO DO - 
+eslint
+mocha
+babel
+
+DESIGN
+This application is a single module microservice, triggered by a rest call. The application utilises sequelize to connect to a LegalFirst style database. The results are then fed into an Excel template which is then uploaded into a specific Fathom account.
+
+DATA FLOW
+Start the process - /import_to_fathom 
+Gather required variables for LF database connection from a GCP bucket
+    - last run date
+    - connection string
+    - Excel template
+Connect to LF database through sequelize models
+Run queries 
+Populate Excel template
+Write Excel file (renamed) to GCP bucket for logging and traceability
+Upload Excel file to Fathom
+Send notification email
+Update last run date variable

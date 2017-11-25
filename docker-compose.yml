@@ -1,5 +1,20 @@
 version: '2'
 services:
+  backend:
+    environment:
+     - DB_HOST=db
+     - PROTOCOL=http
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    links:
+      - dbpostgres
+    ports:
+     - "3001:3001"
+    depends_on:
+     - "dbpostgres"
+    volumes:
+     - ./backend:/usr/src/app
   dbpostgres:
     image: postgres:9.6
     volumes:
@@ -7,7 +22,7 @@ services:
       - ./docker/scripts/startup-script.sh:/docker-entrypoint-initdb.d/startup-script.sh
       - ./docker/scripts/tl.dmp:/tl.dmp
     ports:
-      - "5777:5432"
+      - "5432:5432"
     environment:
       POSTGRES_PASSWORD: stearmanPT-17
       POSTGRES_USER: postgres

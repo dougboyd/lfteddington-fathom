@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "tl_sa",
+    "password": "stearmanPT-17",
+    "database": "tl",
+    "host": "dbpostgres",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
