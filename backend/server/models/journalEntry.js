@@ -53,5 +53,7 @@ module.exports = (sequelize, DataTypes) => {
     })
   }
 
+  
+
   return JournalEntry;
 };

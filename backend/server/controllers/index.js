@@ -1,9 +1,5 @@
-const journalEntries = require('./journalEntries');
-const todos = require('./todos');
-const todoItems = require('./todoitems');
+const journalETL = require('./journalETLController');
 
 module.exports = {
-    journalEntries,
-    todos,
-    todoItems
+    journalETL
 }

@@ -1,0 +1,19 @@
+{
+  "global": {
+    "company_name": "Teddington Pty Ltd",
+    "first_month_of_financial_year": "July",
+    "period_frequency": "Monthly"
+  },
+  "account_groups": [{
+    "name": "Expenses",
+    "accounts": [{
+        "account_number": "1-111000",
+        "account_tag": "CASH"
+      },
+      {
+        "account_tag": "FEXP",
+        "account_number": "5-508000"
+      }
+    ]
+  }]
+}

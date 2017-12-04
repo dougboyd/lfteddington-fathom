@@ -16,15 +16,16 @@ module.exports = (sequelize, DataTypes) => {
       tableName: "journal_line_items",
       timestamps: false,
       underscored: true
-    }, 
-    {
-      classMethods: {
-        associate: function(models) {
-          JournalLineItem.belongsTo(models.AccountDetail, { foreignKey: 'account_id', targetKey: 'account_id' });
-        },
-      }
-    }
+    },
   );
 
-  return JournalLineItem;
+  JournalLineItem.associate = function (models) {
+    JournalLineItem.belongsTo(models.AccountDetail,
+      {
+        foreignKey: 'account_id',
+        targetKey: 'account_id'
+      });
+  }
+
+return JournalLineItem;
 };
