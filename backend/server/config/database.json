@@ -6,5 +6,21 @@
     "host": "dbpostgres",
     "port": 5432,
     "dialect": "postgres"
+  },
+  "UAT": {
+    "username": "tl_sa",
+    "password": "stearmanPT-17",
+    "database": "tl",
+    "host": "office.legalfirst.com.au",
+    "port": 5777,
+    "dialect": "postgres"
+  },
+  "PROD": {
+    "username": "tl_sa",
+    "password": "stearmanPT-17",
+    "database": "tl",
+    "host": "cloudbos.c5ckrvbxi6ln.ap-southeast-2.rds.amazonaws.com",
+    "port": 5777,
+    "dialect": "postgres"
   }
 }

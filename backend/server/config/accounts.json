@@ -4,186 +4,262 @@
     "first_month_of_financial_year": "July",
     "period_frequency": "Monthly"
   },
-  "account_groups": [
-    {
+  "account_groups": [{
       "name": "Current Assets",
-      "accounts": [
-        {
+      "accounts": [{
           "account_number": "1-111000",
-          "account_tag": "CASH"
+          "account_tag": "CASH",
+          "included_account_numbers": [
+            "1-111600",
+            "1-111601",
+            "1-111604"
+          ]
         },
         {
           "account_number": "1-112000",
-          "account_tag": "AR"
+          "account_tag": "AR",
+          "included_account_numbers": [
+            "1-112610",
+            "1-112613",
+            "1-112635"
+          ]
         },
         {
           "account_number": "1-113000",
-          "account_tag": "OCA"
+          "account_tag": "OCA",
+          "included_account_numbers": [
+            "1-113631",
+            "1-113637"
+          ]
         }
       ]
     },
     {
       "name": "Non-Current Assets",
-      "accounts": [
-        {
+      "accounts": [{
           "account_number": "1-124000",
-          "account_tag": "FA"
+          "account_tag": "FA",
+          "included_account_numbers": [
+            "1-124611",
+            "1-124612",
+            "1-124720",
+            "1-124721",
+            "1-124810",
+            "1-124811"
+          ]
         },
         {
           "account_number": "1-125000",
-          "account_tag": "IA"
+          "account_tag": "IA",
+          "included_account_numbers": [
+            "1-125615"
+          ]
         }
       ]
     },
     {
       "name": "Current Liabilities",
-      "accounts": [
-        {
+      "accounts": [{
           "account_tag": "AP",
-          "account_number": "2-221000"
+          "account_number": "2-221000",
+          "included_account_numbers": [
+            "2-221602",
+            "2-221800",
+            "2-221805"
+          ]
         },
         {
           "account_tag": "TL",
-          "account_number": "2-222000"
+          "account_number": "2-222000",
+          "included_account_numbers": [
+            "2-222804",
+            "2-222825",
+            "2-222826",
+            "2-222828",
+            "2-222829"
+          ]
         },
         {
           "account_tag": "TL",
-          "account_number": "2-223000"
+          "account_number": "2-223000",
+          "included_account_numbers": [
+            "2-223106",
+            "2-223107",
+            "2-223108",
+            "2-223109"
+          ]
         },
         {
           "account_tag": "OCL",
-          "account_number": "2-224000"
+          "account_number": "2-224000",
+          "included_account_numbers": [
+            "2-224881",
+            "2-224882"
+          ]
         },
         {
           "account_tag": "TL",
-          "account_number": "2-225000"
+          "account_number": "2-225000",
+          "included_account_numbers": [
+            "2-225100"
+          ]
         }
       ]
     },
     {
       "name": "Non-Current Liabilities",
-      "accounts": [
-        {
+      "accounts": [{
           "account_tag": "LTD",
-          "account_number": "2-231100"
+          "account_number": "2-231100",
+          "included_account_numbers": [
+            "2-231100"
+          ]
         },
         {
           "account_tag": "ONCL",
-          "account_number": "2-231200"
+          "account_number": "2-231200",
+          "included_account_numbers": [
+          ]
         }
       ]
     },
     {
       "name": "Equity",
-      "accounts": [
-        {
+      "accounts": [{
           "account_tag": "OEQ",
-          "account_number": "3-332000"
+          "account_number": "3-332000",
+          "included_account_numbers": [
+            "3-332100"
+          ]
         },
         {
           "account_tag": "RE",
-          "account_number": "3-331000"
+          "account_number": "3-331000",
+          "included_account_numbers": [
+          ]
         }
       ]
     },
     {
       "name": "Revenue",
-      "accounts": [
-        {
+      "accounts": [{
           "account_tag": "REV",
-          "account_number": "4-401000"
+          "account_number": "4-401000",
+          "included_account_numbers": []
         },
         {
           "account_tag": "REV",
-          "account_number": "4-402000"
+          "account_number": "4-402000",
+          "included_account_numbers": []
         },
         {
           "account_tag": "REV",
-          "account_number": "4-403000"
+          "account_number": "4-403000",
+          "included_account_numbers": []
         }
       ]
     },
     {
       "name": "Other Income",
-      "accounts": [
-        {
+      "accounts": [{
           "account_tag": "AINC",
-          "account_number": "4-404000"
+          "account_number": "4-404000",
+          "included_account_numbers": []
         },
         {
           "account_tag": "IINC",
-          "account_number": "4-405000"
+          "account_number": "4-405000",
+          "included_account_numbers": []
         }
       ]
     },
     {
       "name": "Interest Expense",
-      "accounts": [
-        {
-          "account_tag": "IEXP",
-          "account_number": "5-501000"
-        }
-      ]
+      "accounts": [{
+        "account_tag": "IEXP",
+        "account_number": "5-501000",
+        "included_account_numbers": []
+      }]
     },
     {
       "name": "Tax Expenses",
-      "accounts": [
-        {
-          "account_tag": "TEXP",
-          "account_number": "5-502000"
-        }
-      ]
+      "accounts": [{
+        "account_tag": "TEXP",
+        "account_number": "5-502000",
+        "included_account_numbers": [
+
+        ]
+      }]
     },
     {
       "name": "Direct Costs",
-      "accounts": [
-        {
-          "account_tag": "VCOS",
-          "account_number": "5-503000"
-        }
-      ]
+      "accounts": [{
+        "account_tag": "VCOS",
+        "account_number": "5-503000",
+        "included_account_numbers": [
+
+        ]
+      }]
     },
     {
       "name": "Expenses",
-      "accounts": [
-        {
+      "accounts": [{
           "account_tag": "FEXP",
-          "account_number": "5-504000"
+          "account_number": "5-504000",
+          "included_account_numbers": [
+
+          ]
         },
         {
           "account_tag": "FEXP",
-          "account_number": "5-505000"
+          "account_number": "5-505000",
+          "included_account_numbers": [
+
+          ]
         },
         {
           "account_tag": "FEXP",
-          "account_number": "5-506000"
+          "account_number": "5-506000",
+          "included_account_numbers": [
+
+          ]
         },
         {
           "account_tag": "FEXP",
-          "account_number": "5-507000"
+          "account_number": "5-507000",
+          "included_account_numbers": [
+
+          ]
         },
         {
           "account_tag": "FEXP",
-          "account_number": "5-508000"
+          "account_number": "5-508000",
+          "included_account_numbers": [
+          ]
         },
         {
           "account_tag": "FEXP",
-          "account_number": "5-509000"
+          "account_number": "5-509000",
+          "included_account_numbers": [
+          ]
         },
         {
           "account_tag": "FEXP",
-          "account_number": "5-510000"
+          "account_number": "5-510000",
+          "included_account_numbers": [
+          ]
         }
       ]
     },
     {
       "name": "Other Expenses",
-      "accounts": [
-        {
-          "account_tag": "DIV",
-          "account_number": "5-505510"
-        }
-      ]
+      "accounts": [{
+        "account_tag": "DIV",
+        "account_number": "5-505510",
+        "included_account_numbers": [
+
+        ]
+      }]
     }
   ]
 }

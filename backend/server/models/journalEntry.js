@@ -9,6 +9,8 @@ module.exports = (sequelize, DataTypes) => {
 
       }, 
       description: DataTypes.STRING,
+      created_at: DataTypes.DATE,
+      accounting_date: DataTypes.DATE,
       /*
       created_by: DataTypes.INTEGER,
       action_type: DataTypes.STRING,

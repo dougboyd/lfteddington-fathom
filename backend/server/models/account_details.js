@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       // account_id: DataTypes.INTEGER,
       parent_account_id: DataTypes.INTEGER,
+      account_class_id: DataTypes.INTEGER,
       account_number: DataTypes.STRING,
       name: DataTypes.STRING,
       description: DataTypes.STRING,
