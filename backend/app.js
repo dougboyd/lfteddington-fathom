@@ -13,6 +13,7 @@ app.get('*', (req, res) => res.status(200).send({
   message: 'Welcome to the beginning of nothingness.',
 }));
 
+// For dev purposes, this fires the etl process
 etl.run();
 
 module.exports = app;

@@ -8,8 +8,8 @@
     "dialect": "postgres"
   },
   "UAT": {
-    "username": "tl_sa",
-    "password": "stearmanPT-17",
+    "username": "tl_fathom",
+    "password": "FHYHDNJ9MNF593J3AKF3YSUNA1DE1OBTHZMS",
     "database": "tl",
     "host": "office.legalfirst.com.au",
     "port": 5777,
